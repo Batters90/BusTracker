@@ -10,7 +10,10 @@
     <link href="./styles.css" rel="stylesheet" />
 </head>
 <script>
-
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYmF0dGVyczkwIiwiYSI6ImNrc2NmYnYwYTBnY2oycW52bzEzZzI2bmsifQ.YS7dyhYuo0I1XoDOnlh59A';
+    var marker = new mapboxgl.Marker()
+        .setLngLat([-71.091542, 42.358862])
+        .addTo(map);
     async function run()
     {
     const locations = await getBusLocations();
